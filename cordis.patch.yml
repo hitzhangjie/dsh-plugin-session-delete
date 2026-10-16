@@ -1,0 +1,10 @@
+# Bundle layer for @hitzhangjie/dsh-plugin-session-delete.
+#
+# The row name is the bare package name on purpose: dsh-client-modules attaches a
+# package's browser half to the Loader row whose specifier is exactly the bare
+# package-root name, and the profile resolution layer resolves that name from the
+# profile's own node_modules. A relative path ("./lib/index.js") would load the
+# host half but never deliver the sidebar menu entry.
+- insert:
+    - id: hitzhangjie-session-delete
+      name: '@hitzhangjie/dsh-plugin-session-delete'

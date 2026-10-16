@@ -1,0 +1,12 @@
+# Dependencies and build output
+node_modules/
+*.log
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local scratch
+*.local

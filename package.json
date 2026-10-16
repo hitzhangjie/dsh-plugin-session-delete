@@ -1,0 +1,36 @@
+{
+  "name": "@hitzhangjie/dsh-plugin-session-delete",
+  "version": "0.1.0",
+  "description": "Permanently delete a DeepSeek Harness session from the sidebar session menu: stops running work first, refuses sessions with forked children, and removes the event log, projection cache, workspace accounting, archive/pin membership, and spill files.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "session"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
